@@ -1,0 +1,24 @@
+import scanner
+class
+	constructor 
+	define variables 
+	set up scanner object
+	set up scanner to get kilometers and day or night
+	if(day){
+		calculate taxi as day}
+	if(night){
+		calculate taxi as night}
+	
+	if(kilometer > 20){
+		caculate bus fare
+		if(kilometer > 100){
+			calculate train fare
+			if (taxifare < trainfare and busfare){
+				print(taxifare);}
+			if(trainfare < taxifare and busfare){
+				print(trainfare);}
+			if(busfare < taxifare and trainfare){
+				print(busfare);}
+		if(busfare < taxifare){print(busfare)}
+		if(taxifare < busfare){print(taxifare)}}
+	else{print(taxifare)}
