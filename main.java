@@ -1,6 +1,19 @@
 import java.util.Scanner;
-class main{
+public class main{
 	public static void main(String[] args){
+try
+    {
+        Travel TL = new Travel();
+	TL.init();
+    }
+    catch (Exception e)
+    {
+        e.printStackTrace ();
+    }
+}}
+	
+class Travel{
+	public void init(){ 
 		//Init variables
 		double tbgn,DF,NF,taxifare,busfare,trainfare;
 		int K = 0;
@@ -36,10 +49,13 @@ class main{
 		//If the travel is less than 100 but greater than 20, then compare prices between bus and taxi.
 		if(K < 100 && K > 20){
 			if(taxifare < busfare){
-                                System.out.println("Taxi is cheaper " + taxifare);}
-                        if(busfare < taxifare){
-                        	System.out.println("Bus is cheaper " + busfare);}}
+	                               System.out.println("Taxi is cheaper " + taxifare);}
+	                if(busfare < taxifare){
+	                       	System.out.println("Bus is cheaper " + busfare);}}
 		//If travel is less than 20 then just print the taxi price.
 		if(K < 20){System.out.println("Taxi is the only option " + taxifare);}
+			}
+		}	
 	}
+}
 }
