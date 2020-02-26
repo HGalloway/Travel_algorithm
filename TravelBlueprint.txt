@@ -22,3 +22,4 @@ class
 		if(busfare < taxifare){print(busfare)}
 		if(taxifare < busfare){print(taxifare)}}
 	else{print(taxifare)}
+
